@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Taskify</h1>
+    
+    <div class="add-task">
+      <input type="text" id="taskTitle" placeholder="Task title" required>
+      <textarea id="taskDesc" placeholder="Description (optional)"></textarea>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('pending')">Pending</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
